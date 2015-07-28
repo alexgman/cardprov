@@ -25,7 +25,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
-
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/dbext.vim'
@@ -75,4 +74,4 @@ nmap <silent>scl       <Plug>SQLU_CreateColumnList<CR>
 nmap <silent>scd       <Plug>SQLU_GetColumnDef<CR>
 nmap <silent>scdt      <Plug>SQLU_GetColumnDataType<CR>
 nmap <silent>scp       <Plug>SQLU_CreateProcedure<CR>
-
+has this ben commmitted?
