@@ -81,3 +81,12 @@ vmap <Leader>se <Leader>sfs<CR><Leader>se
 
 "This will allow us to reload vimrc script for the current file:
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+"Go to normal mode if you hit i twice
+imap ii <Esc>
+
+"Uncomment this to get the colors working in ConEmu
+" set term=xterm
+" set t_Co=256
+" let &t_AB="\e[48;5;%dm"
+" let &t_AF="\e[38;5;%dm"o
