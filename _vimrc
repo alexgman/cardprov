@@ -75,3 +75,6 @@ nmap <silent>scl       <Plug>SQLU_CreateColumnList<CR>
 nmap <silent>scd       <Plug>SQLU_GetColumnDef<CR>
 nmap <silent>scdt      <Plug>SQLU_GetColumnDataType<CR>
 nmap <silent>scp       <Plug>SQLU_CreateProcedure<CR>
+
+"We want to format the SQL and run the statement at the same time
+vmap <Leader>se <Leader>sfs<CR><Leader>se
