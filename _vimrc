@@ -41,6 +41,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'jbryer/sqlutils' "get rid of this
 Plugin 'vim-scripts/SQLUtilities' "This helps to format sql queries nicely
 Plugin 'jezcope/vim-align'
+Plugin 'vim-scripts/DrawIt'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -74,4 +75,3 @@ nmap <silent>scl       <Plug>SQLU_CreateColumnList<CR>
 nmap <silent>scd       <Plug>SQLU_GetColumnDef<CR>
 nmap <silent>scdt      <Plug>SQLU_GetColumnDataType<CR>
 nmap <silent>scp       <Plug>SQLU_CreateProcedure<CR>
-first we write and then we commit?
