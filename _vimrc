@@ -3,7 +3,6 @@ set wrap
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-
 let mapleader = ','
 
 syntax on
