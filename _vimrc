@@ -78,3 +78,6 @@ nmap <silent>scp       <Plug>SQLU_CreateProcedure<CR>
 
 "We want to format the SQL and run the statement at the same time
 vmap <Leader>se <Leader>sfs<CR><Leader>se
+
+"This will allow us to reload vimrc script for the current file:
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
