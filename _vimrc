@@ -90,8 +90,15 @@ nmap <silent> <leader>vimrc :e $MYVIMRC<CR>
 "Go to normal mode if you hit i twice
 imap ii <Esc>
 
+"not sure yet whether this works, it's supposed to switch tabs
+noremap <C-TAB>   :MBEbn<CR>
+noremap <C-S-TAB> :MBEbp<CR>
+
 "Uncomment this to get the colors working in ConEmu
 " set term=xterm
 " set t_Co=256
 " let &t_AB="\e[48;5;%dm"
-" let &t_AF="\e[38;5;%dm"o
+" let &t_AF="\e[38;5;%dm
+
+"search case insensitive
+:set ignorecase!
