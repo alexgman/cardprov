@@ -43,6 +43,7 @@ Plugin 'vim-scripts/SQLUtilities' "This helps to format sql queries nicely
 Plugin 'jezcope/vim-align'
 Plugin 'vim-scripts/DrawIt'
 Plugin 'stardiviner/AutoSQLUpperCase.vim'
+Plugin 'easymotion/vim-easymotion'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -83,6 +84,9 @@ vmap <Leader>se <Leader>sfs<CR><Leader>se
 "This will allow us to reload vimrc script for the current file:
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+"Let's easily open vimrc:
+nmap <silent> <leader>vimrc :e $MYVIMRC<CR>
+
 "Go to normal mode if you hit i twice
 imap ii <Esc>
 
@@ -91,7 +95,3 @@ imap ii <Esc>
 " set t_Co=256
 " let &t_AB="\e[48;5;%dm"
 " let &t_AF="\e[38;5;%dm"o
-
-select *
-  from setting
- where valuerange like '0%'
