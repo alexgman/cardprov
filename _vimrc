@@ -42,6 +42,7 @@ Plugin 'jbryer/sqlutils' "get rid of this
 Plugin 'vim-scripts/SQLUtilities' "This helps to format sql queries nicely
 Plugin 'jezcope/vim-align'
 Plugin 'vim-scripts/DrawIt'
+Plugin 'stardiviner/AutoSQLUpperCase.vim'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -90,3 +91,7 @@ imap ii <Esc>
 " set t_Co=256
 " let &t_AB="\e[48;5;%dm"
 " let &t_AF="\e[38;5;%dm"o
+
+select *
+  from setting
+ where valuerange like '0%'
