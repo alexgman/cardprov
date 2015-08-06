@@ -42,6 +42,7 @@ call vundle#begin()
   Plugin 'Raimondi/delimitMate' "adds closings to quotes, brackets etc
   Plugin 'godlygeek/tabular'
   Plugin 'chrisbra/csv.vim' 
+  Plugin 'dhruvasagar/vim-table-mode'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -130,3 +131,6 @@ let g:sqlutil_cmd_terminator = "\ngo"
 augroup filetypedetect
   au! BufRead,BufNewFile *.csv,*.dat	setfiletype csv
 augroup END
+
+" prettify sql: we dont really need this, just trying it out
+vnoremap <Leader>rp :s/\<update\>\\|\<select\>\\|\<from\>\\|\<where>\\|\<left join\>\\|\<inner join\>\\|\<group by\>\\|\<order by\>/\r\U&/ge<cr><esc>
